@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MCC Wireless Provider</string>
+    <string name="txtTitle">MCC Wireless Plans</string>
+    <string name="dataPlanPrice">My Statement</string>
+    <string name="dataPlan50">Max Data</string>
+    <string name="dataPlan25">25 GB Data</string>
+    <string name="dataPlan15">15 GB Data</string>
+    <string name="dataPlanShared">Shared 4 lines for 40 dollars each</string>
+    <string name="dataPlanAdd">Add 10gigs for 10 Bucks</string>
+    <string name="txtNewResult">My New Plan Price</string>
+    <string name="hint">My New Price</string>
+    <string name="btnConvert">My New Price</string>
+    <string name="sellMyPhone">Bring your phone in for instant Credit</string>
+    <string name="myNewPlan">Stop by a MCC Wireless booth Today</string>
+</resources>
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.androidbootcamp.mccwireless_ericw.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="511dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="@string/txtTitle"
+            android:textSize="30sp"
+            tools:text="@string/txtTitle" />
+
+        <EditText
+            android:id="@+id/dataPlanPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <RadioButton
+                android:id="@+id/dataPlan50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dataPlan50" />
+
+            <RadioButton
+                android:id="@+id/dataPlan25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dataPlan25" />
+
+            <RadioButton
+                android:id="@+id/dataPlan15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dataPlan15" />
+
+            <RadioButton
+                android:id="@+id/dataPlanShared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dataPlanShared" />
+
+            <RadioButton
+                android:id="@+id/dataPlanAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dataPlanAdd" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dataPlanPrice"
+            android:layout_alignBottom="@+id/dataPlanPrice"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/dataPlanPrice"
+            android:layout_toRightOf="@+id/dataPlanPrice"
+            android:text="@string/btnConvert" />
+
+        <EditText
+            android:id="@+id/txtNewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:inputType="number"
+            android:text="@string/hint" />
+
+        <TextView
+            android:id="@+id/sellMyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/sellMyPhone" />
+
+        <TextView
+            android:id="@+id/myNewPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/sellMyPhone"
+            android:layout_alignRight="@+id/sellMyPhone"
+            android:layout_below="@+id/sellMyPhone"
+            android:layout_marginTop="39dp"
+            android:text="@string/myNewPlan" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
